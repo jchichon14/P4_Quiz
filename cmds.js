@@ -309,7 +309,7 @@ exports.playCmd = rl => {
            log("INCORRECTO");
            log(`Fin del juego. Aciertos : ${score} `);
            log(`${score} `,'red');
-           log("FIN");
+
            rl.prompt();
          }
       });
