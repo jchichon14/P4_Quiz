@@ -289,8 +289,11 @@ exports.playCmd = rl => {
 
          if(a.trim() === quiz.answer){
            score++;
-           log(` CORRECTO - Lleva ${score} aciertos.`);
            log("CORRECTO");
+           log(`${score} `,'green')
+           log(`CORRECTO - Lleva ${score} aciertos.`);
+
+
            toBeResolved.splice(id,1);
 
            //log(`el id en este caso es : ${id}  `);
